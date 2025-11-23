@@ -72,6 +72,12 @@ const dockApps = [
         icon: "trash.png",
         canOpen: false,
     },
+    {
+        id: "portfolio",
+        name: "Profile",
+        icon: "profile.png",  // You can use safari icon or create a custom one
+        canOpen: true,
+    },
 ];
 
 const blogPosts = [
@@ -101,6 +107,10 @@ const blogPosts = [
 
 const techStack = [
     {
+        category: "Programming",
+        items: ["Java", "Python", "JavaScript", "TypeScript", "PHP", "SQL"],
+    },
+    {
         category: "Frontend",
         items: ["React.js", "Next.js", "TypeScript"],
     },
@@ -114,15 +124,19 @@ const techStack = [
     },
     {
         category: "Backend",
-        items: ["Node.js", "Express", "NestJS", "Hono"],
+        items: ["Spring", "Spring Boot", "Microservices", "Node.js", "Express", "NestJS"],
     },
     {
         category: "Database",
-        items: ["MongoDB", "PostgreSQL"],
+        items: ["MongoDB", "PostgreSQL", "MySQL", "SQLite", "Spring JPA", "Prisma ORM"],
     },
     {
-        category: "Dev Tools",
-        items: ["Git", "GitHub", "Docker"],
+        category: "Tools",
+        items: ["Git", "GitHub", "Docker", "Kubernates", "Maven", "Redis"],
+    },
+    {
+        category: "AI Frameworks",
+        items: ["Langchain", "Spring AI", "OpenRouter", "Vercel AI SDK"],
     },
 ];
 
@@ -501,6 +515,8 @@ const WINDOW_CONFIG = {
     terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    portfolio: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

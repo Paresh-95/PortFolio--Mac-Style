@@ -163,7 +163,7 @@ body {
     }
 
     #terminal {
-        @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+        @apply w-4xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
         h2 {
             @apply font-bold text-sm text-center w-full;
@@ -172,7 +172,7 @@ body {
         .techstack {
             @apply text-sm font-roboto p-5;
 
-            .label {
+            .label { 
                 @apply flex items-center ms-10 mt-7;
             }
 
@@ -375,6 +375,10 @@ body {
             }
         }
     }
+
+    #portfolio {
+    @apply w-[95vw] max-w-7xl absolute top-20 left-1/2 -translate-x-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+}
 
     #home {
         @apply relative z-0 max-sm:hidden;
