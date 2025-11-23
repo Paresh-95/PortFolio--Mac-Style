@@ -236,166 +236,340 @@ const WORK_LOCATION = {
     icon: "/icons/work.svg",
     kind: "folder",
     children: [
-        // ▶ Project 1
+        // ▶ Project 1 — Row 1
         {
-            id: 5,
-            name: "Nike Ecommerce Website Application",
+            id: 101,
+            name: "Ajinkyatara Consultants’ Website",
             icon: "/images/folder.png",
             kind: "folder",
-            position: "top-10 left-5", // icon position inside Finder
-            windowPosition: "top-[5vh] left-5", // optional: Finder window position
+            position: "top-10 left-5",
+            windowPosition: "top-[5vh] left-5",
             children: [
                 {
-                    id: 1,
-                    name: "Nike Project.txt",
+                    id: 201,
+                    name: "Ajinkyatara Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-                        "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-                        "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                        "Ajinkyatara Consultants' website is a modern digital presence built to showcase services with clarity and trust.",
+                        "Built using React, Next.js, and MongoDB, the platform ensures fast loading and clean UI.",
                     ],
                 },
                 {
-                    id: 2,
-                    name: "nike.com",
+                    id: 202,
+                    name: "ajinkyatara.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+                    href: "https://ajinkyatara.vercel.app/",
                     position: "top-10 right-20",
                 },
                 {
-                    id: 4,
-                    name: "nike.png",
+                    id: 203,
+                    name: "ajinkyatara.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
+                    imageUrl: "/images/ajinkya.png",
                     position: "top-52 right-80",
-                    imageUrl: "/images/project-1.png",
-                },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
-                },
+                }
             ],
         },
 
-        // ▶ Project 2
+        // ▶ Project 2 — Row 1
         {
-            id: 6,
-            name: "AI Resume Analyzer",
+            id: 102,
+            name: "StudyNotion Ed-Tech Platform",
             icon: "/images/folder.png",
             kind: "folder",
-            position: "top-52 right-80",
-            windowPosition: "top-[20vh] left-7",
+            position: "top-10 left-40",
+            windowPosition: "top-[12vh] left-6",
             children: [
                 {
-                    id: 1,
-                    name: "AI Resume Analyzer Project.txt",
-                    icon: "/images/txt.png",
-                    kind: "file",
-                    fileType: "txt",
-                    position: "top-5 right-10",
-                    description: [
-                        "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-                        "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-                        "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-                    ],
-                },
-                {
-                    id: 2,
-                    name: "ai-resume-analyzer.com",
-                    icon: "/images/safari.png",
-                    kind: "file",
-                    fileType: "url",
-                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
-                    position: "top-20 left-20",
-                },
-                {
-                    id: 4,
-                    name: "ai-resume-analyzer.png",
-                    icon: "/images/image.png",
-                    kind: "file",
-                    fileType: "img",
-                    position: "top-52 left-80",
-                    imageUrl: "/images/project-2.png",
-                },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 left-5",
-                },
-            ],
-        },
-
-        // ▶ Project 3
-        {
-            id: 7,
-            name: "Food Delivery App",
-            icon: "/images/folder.png",
-            kind: "folder",
-            position: "top-10 left-80",
-            windowPosition: "top-[33vh] left-7",
-            children: [
-                {
-                    id: 1,
-                    name: "Food Delivery App Project.txt",
+                    id: 205,
+                    name: "StudyNotion Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                        "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                        "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                        "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                        "StudyNotion is a full-stack Ed-Tech platform enabling students to learn through interactive courses.",
+                        "Includes dashboards, authentication, and course management.",
                     ],
                 },
                 {
-                    id: 2,
-                    name: "food-delivery-app.com",
+                    id: 206,
+                    name: "studynotion.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+                    href: "https://study-notion-frontend-ivory-eta.vercel.app/",
                     position: "top-10 right-20",
                 },
                 {
-                    id: 4,
-                    name: "food-delivery-app.png",
+                    id: 207,
+                    name: "studynotion.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
+                    imageUrl: "/images/StudyNotion.png",
                     position: "top-52 right-80",
-                    imageUrl: "/images/project-3.png",
-                },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
-                },
+                }
             ],
         },
+
+        // ▶ Project 3 — Row 1
+        {
+            id: 103,
+            name: "Shortcut Blogging Platform",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-10 left-[70%]",
+            children: [
+                {
+                    id: 209,
+                    name: "Shortcut Blog Project.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "A full-stack blogging platform with authentication and dynamic content rendering.",
+                        "Built with Next.js, Node, Express, MongoDB.",
+                    ],
+                },
+                {
+                    id: 210,
+                    name: "shortcut-blog.com",
+                    icon: "/images/safari.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://blog-app-frontend-attack-capital.vercel.app/",
+                    position: "top-15 right-20",
+                },
+                {
+                    id: 211,
+                    name: "shortcut.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    imageUrl: "/images/blog.png",
+                    position: "top-52 right-80",
+                }
+            ],
+        },
+
+        // ▶ Project 4 — Row 1
+        {
+            id: 104,
+            name: "Kanban Task Management Tool",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-10 left-[90%]",
+            children: [
+                {
+                    id: 213,
+                    name: "Kanban Project.txt",
+                    icon: "/images/txt.png",
+                    fileType: "txt",
+                    kind: "file",
+                    position: "top-5 left-10",
+                    description: [
+                        "Kanban-style MERN task manager with drag-and-drop boards.",
+                        "Responsive UI with Tailwind CSS.",
+                    ],
+                },
+                {
+                    id: 214,
+                    name: "kanban.com",
+                    icon: "/images/safari.png",
+                    fileType: "url",
+                    kind: "file",
+                    href: "https://project-management-task-y2np.vercel.app/",
+                    position: "top-10 right-20",
+                },
+                {
+                    id: 215,
+                    name: "kanban.png",
+                    icon: "/images/image.png",
+                    fileType: "img",
+                    kind: "file",
+                    imageUrl: "/images/kanban.png",
+                    position: "top-52 right-80",
+                }
+            ],
+        },
+
+        // ▶ Project 5 — Row 2
+        {
+            id: 105,
+            name: "Akatsuki Coding Club Website",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-[32vh] left-5",
+            children: [
+                {
+                    id: 217,
+                    name: "Akatsuki Website.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "Official Akatsuki coding club website built using React, TypeScript & Tailwind.",
+                    ],
+                },
+                {
+                    id: 218,
+                    name: "akatsuki.com",
+                    icon: "/images/safari.png",
+                    fileType: "url",
+                    kind: "file",
+                    href: "https://akatsuki.rcpit.ac.in/",
+                    position: "top-15 right-20",
+                },
+                {
+                    id: 219,
+                    name: "akatsuki.png",
+                    icon: "/images/image.png",
+                    fileType: "img",
+                    kind: "file",
+                    imageUrl: "/images/akatsuki.png",
+                    position: "top-52 right-80",
+                }
+            ],
+        },
+
+        // ▶ Project 6 — Row 2
+        {
+            id: 106,
+            name: "Akatsuki Connect",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-[32vh] left-40",
+            children: [
+                {
+                    id: 221,
+                    name: "Akatsuki Connect.txt",
+                    icon: "/images/txt.png",
+                    fileType: "txt",
+                    kind: "file",
+                    position: "top-5 left-10",
+                    description: [
+                        "Student networking and communication platform built with React.",
+                    ],
+                },
+                {
+                    id: 222,
+                    name: "connect.com",
+                    icon: "/images/safari.png",
+                    fileType: "url",
+                    kind: "file",
+                    href: "https://akatsuki-connect.vercel.app/",
+                    position: "top-10 right-20",
+                },
+                {
+                    id: 223,
+                    name: "connect.png",
+                    icon: "/images/image.png",
+                    fileType: "img",
+                    kind: "file",
+                    imageUrl: "/images/connect.png",
+                    position: "top-52 right-80",
+                }
+            ],
+        },
+
+        // ▶ Project 8 — Row 2
+        {
+            id: 108,
+            name: "React Blog Application",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-[32vh] left-[90%]",
+            children: [
+                {
+                    id: 229,
+                    name: "React Blog.txt",
+                    icon: "/images/txt.png",
+                    fileType: "txt",
+                    kind: "file",
+                    position: "top-5 left-10",
+                    description: [
+                        "Simple blogging UI built with React + Tailwind.",
+                    ],
+                },
+                {
+                    id: 230,
+                    name: "reactblog.com",
+                    icon: "/images/safari.png",
+                    fileType: "url",
+                    kind: "file",
+                    href: "https://blog-website-using-react.vercel.app/",
+                    position: "top-15 right-20",
+                },
+                {
+                    id: 231,
+                    name: "reactblog.png",
+                    icon: "/images/image.png",
+                    fileType: "img",
+                    kind: "file",
+                    imageUrl: "/images/ReactBlog.png",
+                    position: "top-52 right-80",
+                }
+            ],
+        },
+
+      
+
+        // ▶ Project 10 — Row 3
+        {
+            id: 110,
+            name: "E-commerce React",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-[58vh] left-40",
+            children: [
+                {
+                    id: 237,
+                    name: "Ecommerce React.txt",
+                    icon: "/images/txt.png",
+                    fileType: "txt",
+                    kind: "file",
+                    position: "top-5 left-10",
+                    description: [
+                        "Modern e-commerce UI built using React + Redux.",
+                    ],
+                },
+                {
+                    id: 238,
+                    name: "ecommerce.com",
+                    icon: "/images/safari.png",
+                    fileType: "url",
+                    kind: "file",
+                    href: "https://e-commerce-react-redux-alpha.vercel.app/",
+                    position: "top-10 right-20",
+                },
+                {
+                    id: 239,
+                    name: "ecommerce.png",
+                    icon: "/images/image.png",
+                    fileType: "img",
+                    kind: "file",
+                    imageUrl: "/images/E-commerce.png",
+                    position: "top-52 right-80",
+                }
+            ],
+        },
+
+      
     ],
 };
+
+
+
 
 const ABOUT_LOCATION = {
     id: 2,
@@ -516,6 +690,8 @@ const WINDOW_CONFIG = {
     txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     portfolio: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    web:      { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+
 
 };
 

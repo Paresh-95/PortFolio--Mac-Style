@@ -14,6 +14,9 @@ import Home from "#windows/Home.jsx"
 import Contact from "#windows/Contact.jsx";
 import Photos from "#windows/Photos.jsx";
 import Portfolio from "#windows/Portfolio.jsx";
+import WebWindow from "#windows/WebWindow.jsx";
+
+
 gsap.registerPlugin(Draggable)
 const App = () => {
     return (
@@ -31,6 +34,7 @@ const App = () => {
             <Photos />
             <Portfolio />
             <Home />
+            <WebWindow />
         </main>
     )
 }

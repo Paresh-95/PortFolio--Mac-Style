@@ -1,36 +1,44 @@
 import React from 'react'
-import clsx from 'clsx'
 import { locations } from "#constants/index.js"
 import { useGSAP } from '@gsap/react'
 import { Draggable } from "gsap/Draggable"
 import gsap from "gsap"
 import useWindowStore from '#store/window'
 import useLocationStore from '#store/location'
+
 gsap.registerPlugin(Draggable)
+
 const Home = () => {
     const { setActiveLocation } = useLocationStore();
-    const projects = locations.work?.children ?? [];
     const { openWindow } = useWindowStore()
 
-    const handleOpenProjectFinder = (project) => {
-        setActiveLocation(project)
+    // This will be the SINGLE folder
+    const projectsFolder = locations.work
+
+    const openProjects = () => {
+        setActiveLocation(projectsFolder)
         openWindow('finder')
     }
 
-
     useGSAP(() => {
-        Draggable.create(".folder")
+        Draggable.create(".folder", {
+            bounds: "#home",
+            inertia: true,
+            edgeResistance: 0.8,
+            type: "x,y",
+        })
     }, [])
 
     return (
-        <section id='home'>
-            <ul>
-                {projects.map((project) => (
-                    <li key={project.id} onClick={() => handleOpenProjectFinder(project)} className={clsx("group folder", "cursor-pointer", project.windowPosition)}>
-                        <img src="/images/folder.png" alt={project.name} />
-                        <p>{project.name}</p>
-                    </li>
-                ))}
+        <section id="home">
+            <ul className="single-folder">
+                <li
+                    className="group folder cursor-pointer"
+                    onClick={openProjects}
+                >
+                    <img src="/images/folder.png" alt="Projects"/>
+                    <p>Projects</p>
+                </li>
             </ul>
         </section>
     )
