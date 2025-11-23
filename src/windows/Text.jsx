@@ -19,10 +19,10 @@ const Text = () => {
             </div>
             <div className="p-5 overflow-y-auto h-full pb-10">
                 {image && (
-                    <img 
-                        src={image} 
-                        alt={name} 
-                        className="w-full h-48 object-cover rounded-lg mb-5"
+                    <img
+                        src={image}
+                        alt={name}
+                        className="w-full h-48 object-contain rounded-lg mb-5"
                     />
                 )}
                 {subtitle && (
