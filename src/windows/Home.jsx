@@ -12,7 +12,6 @@ const Home = () => {
     const { setActiveLocation } = useLocationStore();
     const { openWindow } = useWindowStore()
 
-    // This will be the SINGLE folder
     const projectsFolder = locations.work
 
     const openProjects = () => {
@@ -22,7 +21,12 @@ const Home = () => {
 
     useGSAP(() => {
         Draggable.create(".folder", {
-            bounds: "#home",
+            bounds: {
+                top: 80,                     // 🟢 Prevent going inside navbar
+                left: 0,
+                width: window.innerWidth,
+                height: window.innerHeight - 100,
+            },
             inertia: true,
             edgeResistance: 0.8,
             type: "x,y",
@@ -30,18 +34,30 @@ const Home = () => {
     }, [])
 
     return (
-        <section id="home">
+        <section
+            id="home"
+            className="relative pt-[90px]"    // 🟢 Add padding so icons start BELOW navbar
+        >
+
+            {/* 🔥 Top-Right Disclaimer */}
+            <p className="absolute text-black font-semibold top-2 right-4 text-sm opacity-70">
+                Open in fullscreen for best experience
+            </p>
+
+            {/* 🟦 Desktop Folder */}
             <ul className="single-folder">
                 <li
-                    className="group folder cursor-pointer"
+                    className="group folder cursor-pointer w-[80px] text-center"
                     onClick={openProjects}
                 >
-                    <img src="/images/folder.png" alt="Projects"/>
-                    <p>Projects</p>
+                    <img src="/images/folder.png" alt="Projects" className="w-[70px]" />
+                    <p className="text-white text-sm mt-1 bg-blue-500 rounded px-1 py-[1px]">
+                        Projects
+                    </p>
                 </li>
             </ul>
         </section>
     )
 }
 
-export default Home
+export default Home  
