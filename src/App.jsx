@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from "#components/Navbar.jsx";
 import Welcome from "#components/Welcome.jsx";
 import Dock from "#components/Dock.jsx"
+import MobileNotSupported from "#components/MobileNotSupported.jsx"
 import Terminal from "#windows/Terminal.jsx"
 import { Draggable } from "gsap/Draggable"
 import gsap from "gsap"
@@ -21,20 +22,23 @@ gsap.registerPlugin(Draggable)
 const App = () => {
     return (
         <main>
-            <Navbar />
-            <Welcome />
-            <Dock />
-            <Terminal />
-            <Safari />
-            <Resume />
-            <Finder />
-            <Text />
-            <Image />
-            <Contact />
-            <Photos />
-            <Portfolio />
-            <Home />
-            <WebWindow />
+            <MobileNotSupported />
+            <div className="desktop-content">
+                <Navbar />
+                <Welcome />
+                <Dock />
+                <Terminal />
+                <Safari />
+                <Resume />
+                <Finder />
+                <Text />
+                <Image />
+                <Contact />
+                <Photos />
+                <Portfolio />
+                <Home />
+                <WebWindow />
+            </div>
         </main>
     )
 }

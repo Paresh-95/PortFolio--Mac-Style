@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import "tailwindcss";
+@import "./styles/MobileNotSupported.css";
 
 html,
 body {
@@ -73,11 +74,16 @@ body {
     #welcome {
         @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:h-screen max-sm:w-full max-sm:px-10;
 
+        > p,
+        > h1 {
+            @apply max-sm:hidden;
+        }
+
         .small-screen {
-            @apply sm:hidden m-7 bg-red-300/20 backdrop-blur-lg p-3 rounded-md absolute top-10;
+            @apply sm:hidden bg-transparent p-5;
 
             p {
-                @apply flex-1 text-[16px] text-center font-roboto text-gray-400;
+                @apply text-5xl font-bold text-center text-gray-100;
             }
         }
     }
@@ -409,4 +415,10 @@ body {
     }
 }
 
+}
+
+@media (max-width: 640px) {
+    .desktop-content {
+        display: none;
+    }
 }

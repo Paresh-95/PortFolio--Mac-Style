@@ -1,0 +1,94 @@
+.mobile-not-supported {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .mobile-not-supported {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        z-index: 9999;
+    }
+
+    .mobile-not-supported .content {
+        text-align: center;
+        padding: 2rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .mobile-not-supported .icon {
+        font-size: 3rem;
+        color: rgba(255, 255, 255, 0.9);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .mobile-not-supported h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .mobile-not-supported p {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 300px;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .mobile-not-supported .decoration {
+        display: flex;
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .mobile-not-supported .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    .mobile-not-supported .dot:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .mobile-not-supported .dot:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes pulse {
+        0%,
+        100% {
+            opacity: 0.6;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+}

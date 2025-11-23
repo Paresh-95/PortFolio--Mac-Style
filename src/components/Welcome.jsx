@@ -84,7 +84,7 @@ const Welcome = () => {
 
     return (
         <section id="welcome">
-            <p ref={subtitleRef}>
+            <p ref={subtitleRef} className="max-sm:hidden">
                 {renderText(
                     "Hey I'm Paresh Welcome to my",
                     "text-3xl font-georama",
@@ -92,12 +92,12 @@ const Welcome = () => {
                 )}
             </p>
 
-            <h1 ref={titleRef} className="mt-7">
+            <h1 ref={titleRef} className="mt-7 max-sm:hidden">
                 {renderText("portfolio", "text-9xl italic font-georama", 400)}
             </h1>
 
             <div className="small-screen">
-                <p>This Portfolio is designed for desktop/tablet screen</p>
+                <p>Not optimized for mobile</p>
             </div>
         </section>
     );
