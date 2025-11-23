@@ -33,7 +33,7 @@ const useWindowStore = create(
 
         focusWindow: (windowKey) =>
             set((state) => {
-                const win = state.windows[windowKey]; // ✅ windows
+                const win = state.windows[windowKey];
 
                 if (!win) return;
 
